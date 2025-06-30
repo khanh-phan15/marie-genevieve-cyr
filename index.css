@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    line-height: normal;
+}
+@font-face {
+    font-family: 'Akkurat';
+    src: url('.fonts/Akkurat.woff2') format('woff2'),
+         url('./fonts/Akkurat.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+     font-family: 'Canela-Regular', serif;;
+    src: url('./fonts/canela-regular-trial-webfont.woff2') format('woff2'),
+         url('./fonts/canela-regular-trial-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Canela-RegularItalic';
+    src: url('./fonts/canela-regularitalic-trial-webfont.woff2') format('woff2'),
+         url('./fonts/canela-regularitalic-trial-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  html, body {
+     margin: 0;
+     padding: 0;
+     overflow-x: hidden;
+     overflow-y: auto;
+   }
