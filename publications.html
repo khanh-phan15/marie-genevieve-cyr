@@ -14,6 +14,7 @@
 <body>
   	
   	<div class="desktop-6">
+		<div class="content">
     		<img class="publications-background" alt="" src="image assets MG/PUBLICATIONS/3-Book Mockup copy 1.png">
     		
     		<div class="desktop-6-child">
@@ -46,7 +47,7 @@
 			<a href="index.html" class="marie-genevieve-cyr1"><span>MARIE</span><span>GENEVIEVE</span><span>CYR</span>  </a>
     		 
     		<img class="publication-photo1" alt="" src="image assets MG/PUBLICATIONS/Book Mockup copy2 1.png">
-    		
+		</div>		
   	</div>
 	  <div class="menu-container">
 		<button class="menu-toggle" id="menuBtn">
@@ -135,6 +136,21 @@
   padding: 0;
   overflow-x: hidden;
   overflow-y: auto;
+}
+.desktop-6 {
+  	width: 100%;
+  	position: relative;
+  	background-color: #fff;
+  	overflow: hidden;
+  	text-align: center;
+  	font-size: 29px;
+  	color: #000;
+  	font-family: Akkurat;
+
+}
+.content {
+  position: relative;
+  height: 3600px; /* Or however tall your content actually needs */
 }
   .folder-menu a {
 	  display: block;
@@ -253,8 +269,8 @@
   	position: absolute;
   	top: 0px;
   	left: 0px;
-  	width: 1439px;
-  	height: 1025px;
+  	width: 1470px;
+  	height: 1002px;
   	object-fit: cover;
 }
 .desktop-6-child {
@@ -269,14 +285,15 @@
 
 .publications {
   	position: absolute;
-  	top: calc(50% - 1573px);
-  	left: calc(50% - 455px);
+  	top: 453px;
+	left: calc(50% - 455px);
   	font-size: 125px;
-  	 font-family: 'Canela-Regular', serif;;
+  	font-family: 'Canela-Regular', serif;;
   	color: #fff;
   	display: inline-block;
   	width: 909px;
   	height: 150px;
+	  z-index: 10;
 }
 .group-child {
   	position: absolute;
@@ -480,7 +497,7 @@
 }
 .marie-genevieve-cyr1 {
   	position: absolute;
-  	top: calc(50% - 1968px);
+  	top: 43px; /* or adjust as needed */
   	left: calc(50% - 680px);
   	 font-family: 'Canela-Regular', serif;;
   	color: #fff;
@@ -544,24 +561,51 @@
   	height: 459px;
   	object-fit: cover;
 }
-.desktop-6 {
-  	width: 100%;
-  	position: relative;
-  	background-color: #fff;
-  	height: 4022px;
-  	overflow: hidden;
-  	text-align: center;
-  	font-size: 29px;
-  	color: #000;
-  	font-family: Akkurat;
 
-}
+.site-footer {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffd1dc;
+  color: black;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  font-size: 16px;
+  flex-wrap: wrap;
+  z-index: 10;
+    }
 
+    .footer-item a {
+      color: black;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: color 0.3s ease;
+    }
+
+    .footer-item a:hover {
+      color: #333;
+    }
+
+    .footer-item svg {
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 2;
+      width: 20px;
+      height: 20px;
+    }
 /*Movile view*/
 @media (max-width: 768px) {
 	body {
 margin: 0;
 line-height: normal;
+}
+.content {
+  position: relative;
+  height: 2500px; /* Or however tall your content actually needs */
 }
 .menu-toggle {
     position: absolute;
@@ -722,40 +766,6 @@ width: 380px;      height: 80px;
 	width: 80%;
 }
 }
-.site-footer {
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #ffd1dc;
-  color: black;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  font-size: 16px;
-  flex-wrap: wrap;
-  z-index: 10;
-    }
 
-    .footer-item a {
-      color: black;
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      transition: color 0.3s ease;
-    }
-
-    .footer-item a:hover {
-      color: #333;
-    }
-
-    .footer-item svg {
-      stroke: currentColor;
-      fill: none;
-      stroke-width: 2;
-      width: 20px;
-      height: 20px;
-    }
 
 </style>
