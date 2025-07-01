@@ -15,6 +15,7 @@
 <body>
   	
   	<div class="homepage">
+      <div class="content">
     		<img class="homepage-background" alt="" src="image assets MG/homepage-background.png">
     		
     		<div class="homepage-child">
@@ -44,6 +45,38 @@
         </button>
         
     
+       
+        <div class="footer-folder-menu">
+          <a href="consulting.html" class="footer-folder-icon">
+            <div class="folder-tag"></div>
+            <div class="folder-label">[ 1 ] Consulting</div>
+          </a>
+          <a href="mentoring.html" class="footer-folder-icon">
+            <div class="folder-tag"></div>
+            <div class="folder-label">[ 2 ] Mentoring</div>
+          </a>
+          <a href="global-masterclasses.html" class="footer-folder-icon">
+            <div class="folder-tag"></div>
+            <div class="folder-label">[ 3 ] Global masterclasses</div>
+          </a>
+          <a href="creative-practice.html" class="footer-folder-icon">
+            <div class="folder-tag"></div>
+            <div class="folder-label">[ 4 ] Creative practice</div>
+          </a>
+          <a href="jeu-de-mots.html" class="footer-folder-icon">
+            <div class="folder-tag"></div>
+            <div class="folder-label">[ 5 ] Jeu de mots</div>
+          </a>
+          <a href="publications.html" class="footer-folder-icon">
+            <div class="folder-tag"></div>
+            <div class="folder-label">[ 6 ] Publications</div>
+          </a>
+          <a href="dialogue-n-impact.html" class="footer-folder-icon">
+            <div class="folder-tag"></div>
+            <div class="folder-label">[ 7 ] Dialogue & Impact</div>
+          </a>
+          </div>
+        </div>
         <div class="folder-menu" id="dropdownMenu">
           <a href="consulting.html" class="folder-icon">
             <div class="folder-tag"></div>
@@ -75,36 +108,6 @@
             <div class="folder-label">[ 7 ] Dialogue & Impact</div>
           </a>
         </div>
-        <div class="footer-folder-menu">
-          <a href="consulting.html" class="footer-folder-icon">
-            <div class="folder-tag"></div>
-            <div class="folder-label">[ 1 ] Consulting</div>
-          </a>
-          <a href="mentoring.html" class="footer-folder-icon">
-            <div class="folder-tag"></div>
-            <div class="folder-label">[ 2 ] Mentoring</div>
-          </a>
-          <a href="global-masterclasses.html" class="footer-folder-icon">
-            <div class="folder-tag"></div>
-            <div class="folder-label">[ 3 ] Global masterclasses</div>
-          </a>
-          <a href="creative-practice.html" class="footer-folder-icon">
-            <div class="folder-tag"></div>
-            <div class="folder-label">[ 4 ] Creative practice</div>
-          </a>
-          <a href="jeu-de-mots.html" class="footer-folder-icon">
-            <div class="folder-tag"></div>
-            <div class="folder-label">[ 5 ] Jeu de mots</div>
-          </a>
-          <a href="publications.html" class="footer-folder-icon">
-            <div class="folder-tag"></div>
-            <div class="folder-label">[ 6 ] Publications</div>
-          </a>
-          <a href="dialogue-n-impact.html" class="footer-folder-icon">
-            <div class="folder-tag"></div>
-            <div class="folder-label">[ 7 ] Dialogue & Impact</div>
-          </a>
-          </div>
           <footer class="site-footer">
             <div class="footer-item">
               <a href="mailto:mariegenevievecyr@gmail.com" aria-label="Email">
@@ -151,7 +154,12 @@
 <style>
 	body {
     margin: 0;
+    min-height: 100vh;
     line-height: normal;
+}
+.content{
+  position: relative;
+  height: 2880px;
 }
 .bernstein-mg-9830-1-icon {
   	position: absolute;
@@ -190,14 +198,15 @@
   	height: 754px;
 }
 .marie-genevive-cyr {
-  	position: absolute;
-  	top: 1186px;
-  	left: calc(50% - 617px);
-  	font-size: 60px;
-  	 font-family: 'Canela-Regular', serif;;
-  	display: inline-block;
-  	width: 1234px;
-  	height: 360px;
+  position: absolute;
+  top: 1186px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 60px;
+  font-family: 'Canela-Regular', serif;
+  display: inline-block;
+  width: 1134px;
+  height: 360px;
 }
 .marie-genevieve-cyr1 {
   	position: absolute;
@@ -227,7 +236,6 @@
   	width: 100%;
   	position: relative;
   	background-color: #fff;
-  	height: 3073px;
   	overflow: hidden;
   	text-align: center;
   	font-size: 29px;
@@ -374,7 +382,7 @@
 /*footer menu*/
 .footer-folder-menu {
   position: absolute;
-  bottom: 500px; /* Adjust based on spacing needs */
+  bottom: 300px; /* Adjust based on spacing needs */
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -420,8 +428,48 @@ box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   top: 22px;
   left: 40px;
 }
+.site-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20px; /* same as padding-bottom */
+  background-color: #ffd1dc;
+  color: black;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  font-size: 16px;
+  flex-wrap: wrap;
+  z-index: 10;
+    }
 
+    .footer-item a {
+      color: black;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: color 0.3s ease;
+    }
+
+    .footer-item a:hover {
+      color: #333;
+    }
+
+    .footer-item svg {
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 2;
+      width: 20px;
+      height: 20px;
+    }
     @media (max-width: 768px) {
+      .content{
+  position: relative;
+  height: 3400px;
+}
       .menu-toggle {
     position: absolute;
     top: 73px;
@@ -510,7 +558,7 @@ box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 .learn-more{
   position: absolute;
-  top: 1333px;
+  top: 1393px;
   left: 50%;
   transform: translateX(-50%);
   color: #979797;
@@ -521,41 +569,9 @@ box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   text-decoration: underline;
   text-align: center; /* center the text inside the box */
 }
+.footer-folder-menu{
+  display: none;
+}
   }
-  .site-footer {
-    position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #ffd1dc;
-  color: black;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  font-size: 16px;
-  flex-wrap: wrap;
-  z-index: 10;
-    }
-
-    .footer-item a {
-      color: black;
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      transition: color 0.3s ease;
-    }
-
-    .footer-item a:hover {
-      color: #333;
-    }
-
-    .footer-item svg {
-      stroke: currentColor;
-      fill: none;
-      stroke-width: 2;
-      width: 20px;
-      height: 20px;
-    }
+  
 </style>
