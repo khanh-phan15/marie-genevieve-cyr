@@ -626,6 +626,41 @@
   	color: #000;
   	font-family: Akkurat;
 }
+.site-footer {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffd1dc;
+  color: black;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  font-size: 16px;
+  flex-wrap: wrap;
+  z-index: 10;
+    }
+
+    .footer-item a {
+      color: black;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: color 0.3s ease;
+    }
+
+    .footer-item a:hover {
+      color: #333;
+    }
+
+    .footer-item svg {
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 2;
+      width: 20px;
+      height: 20px;
+    }
 @media (max-width: 768px) {
 	body {
 margin: 0;
@@ -666,7 +701,7 @@ width: 380px;      height: 80px;
     }
 	.ashley-3-1 {
     width: 383%;
-    height: auto;
+    height: 1025px;
     transform: translateX(-37%);
 }
 
@@ -700,30 +735,8 @@ width: 380px;      height: 80px;
   .marie-genevieve-cyr1 span {
         display: block; /* Make each word a block element */
     }
-	.menu {
-    position: absolute;
-	top: 65px;
-	right: 20px;
-    width: auto;
-    height: auto;
-  }
 
-  .rectangle-group {
-    position: static;
-    width: 30px;
-    height: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .rectangle-div,
-  .group-child1,
-  .group-child2 {
-    height: 3px;
-    background-color: rgb(255, 255, 255);
-    width: 100%;
-  }
+  
   .image-gallery {
                 display: flex;
                 flex-direction: column; /* Stack images in a single column */
@@ -901,39 +914,6 @@ width: 380px;      height: 80px;
 	width: 86%;
 }
 }
-.site-footer {
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #ffd1dc;
-  color: black;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  font-size: 16px;
-  flex-wrap: wrap;
-  z-index: 10;
-    }
 
-    .footer-item a {
-      color: black;
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      transition: color 0.3s ease;
-    }
 
-    .footer-item a:hover {
-      color: #333;
-    }
-
-    .footer-item svg {
-      stroke: currentColor;
-      fill: none;
-      stroke-width: 2;
-      width: 20px;
-      height: 20px;
-    }
 </style>
