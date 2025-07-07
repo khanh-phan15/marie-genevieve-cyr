@@ -565,7 +565,40 @@
   	color: #000;
   	font-family: Akkurat;
 }
+.site-footer {
+  position: relative; /* or just remove 'position' completely */
+  background-color: #ffd1dc;
+  color: black;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  font-size: 16px;
+  flex-wrap: wrap;
+  z-index: 10;
+}
 
+
+    .footer-item a {
+      color: black;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: color 0.3s ease;
+    }
+
+    .footer-item a:hover {
+      color: #333;
+    }
+
+    .footer-item svg {
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 2;
+      width: 20px;
+      height: 20px;
+    }
 @media (max-width: 768px) {
 .tallermarie-16-1-icon {
     width: 110%;
@@ -722,40 +755,73 @@
       height: 80px; 
      
     }
+	@media only screen and (min-width: 1536px) and (max-width: 3456px) {
+    /* Your CSS adjustments for MacBook 16-inch */
+.mentoring{
+  height: 6300px;
+}
+  .marie-genevieve-cyr1 {
+    position: absolute;
+  	top: 73px; /* or adjust as needed */
+  	left: 70px;
+    font-size: 55px;
+  
+    }
+    .menu-toggle {
+      position: absolute;
+      top: 74px;
+      right: 70px;
+      height: 34px;
+      width: 80px; /* wider hamburger */
+    }
+    .menu-toggle .bar {
+      height: 6px;
+      width: 100%;
+      background-color: rgb(255, 255, 255);
+      border-radius: 0px;
+      gap: 1px;
+}
+  .tallermarie-16-1-icon {
+	position: fixed; /* Use fixed positioning */
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    object-fit: cover; /* Maintain aspect ratio */
+    left: 0; /* Align to the left */
+    top: 0; /* Align to the top */
+    z-index: -1; /* Ensure it stays behind other content */
+  }
+  .mentoring-child{
+    position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	background-color: #000;
+  	width: 3456px;
+  	height: 2234px;
+  	opacity: 0.4;
+  }
+  .consulting1{
+    position: absolute;
+    top: 1000px;
+	left: 1000px;
+    font-size: 250px;
+  }
+
+.consulting-description{
+    position: absolute;
+    top: 2534px;
+    left: 15%;
+    width: 70%;
+    font-size: 50pt;
+  }
+
+
+  .site-footer{
+    font-size: 25pt;
+    padding: 40px;
+    gap: 100px;
+  }
+}
 }
 
-.site-footer {
-  position: relative; /* or just remove 'position' completely */
-  background-color: #ffd1dc;
-  color: black;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  font-size: 16px;
-  flex-wrap: wrap;
-  z-index: 10;
-}
 
-
-    .footer-item a {
-      color: black;
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      transition: color 0.3s ease;
-    }
-
-    .footer-item a:hover {
-      color: #333;
-    }
-
-    .footer-item svg {
-      stroke: currentColor;
-      fill: none;
-      stroke-width: 2;
-      width: 20px;
-      height: 20px;
-    }
 </style>
