@@ -31,3 +31,19 @@ body {
      overflow-x: hidden;
      overflow-y: auto;
    }
+   @media only screen and (min-width: 1536px) and (max-width: 3456px) {
+     .menu-toggle {
+          position: absolute;
+          top: 74px;
+          right: 70px;
+          height: 34px;
+          width: 80px; /* wider hamburger */
+        }
+        .menu-toggle .bar {
+          height: 6px;
+          width: 100%;
+          background-color: rgb(255, 255, 255);
+          border-radius: 0px;
+          gap: 1px;
+    }
+   }
